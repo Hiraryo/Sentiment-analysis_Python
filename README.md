@@ -1,3 +1,6 @@
+# Sentiment-analysis_Python
+プロジェクト演習という授業で、ニコニコ動画のコメントを感情分析を行い、お勧めの動画を提案するという研究で使うために作りました。
+
 # WikiExtractor
 [WikiExtractor.py](http://medialab.di.unipi.it/wiki/Wikipedia_Extractor) is a Python script that extracts and cleans text from a [Wikipedia database dump](http://download.wikimedia.org/).
 
