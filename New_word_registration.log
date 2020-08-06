@@ -1,0 +1,109 @@
+Script started on Mon Aug  3 02:53:25 2020
+/Users/ryota/.zshrc:1: no such file or directory: evalsource "/usr/local/Cellar/anyenv/1.1.1/libexec/../completions/anyenv.zsh"\nanyenv() {\n  typeset command\n  command="$1"\n  if [ "$#" -gt 0 ]; then\n    shift\n  fi\n  command anyenv "$command" "$@"\n}\nexport PYENV_ROOT="/Users/ryota/.anyenv/envs/pyenv"\nexport PATH="/Users/ryota/.anyenv/envs/pyenv/bin:$PATH"\nexport PATH="/Users/ryota/.anyenv/envs/pyenv/shims:${PATH}"\nexport PYENV_SHELL=zsh\nsource '/Users/ryota/.anyenv/envs/pyenv/libexec/../completions/pyenv.zsh'\ncommand pyenv rehash 2>/dev/null\npyenv() {\n  local command\n  command="${1:-}"\n  if [ "$#" -gt 0 ]; then\n    shift\n  fi\n\n  case "$command" in\n  rehash|shell)\n    eval "$(pyenv "sh-$command" "$@")";;\n  *)\n    command pyenv "$command" "$@";;\n  esac\n}
+[1m[7m%[27m[1m[0m                                                                                ]7;file://Mac-mini.local/Users/ryota/Desktop/project[0m[27m[24m[Jryota@Mac-mini project % [K[?2004hscript result.txt[10D          [11Dpython3 mecab.py comment.txt[28Dscript                      [22D result.txt[17D                 [17Dscript result.txt[10D          [11D result.txt[17D                 [17D[7mpython add.py[27m[13D[27mp[27my[27mt[27mh[27mo[27mn[27m [27ma[27md[27md[27m.[27mp[27my[?2004l
+2020-08-03 02:53:52,976 : INFO : loading Word2Vec object from ./wiki.model
+2020-08-03 02:53:53,714 : INFO : loading wv recursively from ./wiki.model.wv.* with mmap=None
+2020-08-03 02:53:53,714 : INFO : loading vectors from ./wiki.model.wv.vectors.npy with mmap=None
+2020-08-03 02:53:53,876 : INFO : setting ignored attribute vectors_norm to None
+2020-08-03 02:53:53,876 : INFO : loading vocabulary recursively from ./wiki.model.vocabulary.* with mmap=None
+2020-08-03 02:53:53,876 : INFO : loading trainables recursively from ./wiki.model.trainables.* with mmap=None
+2020-08-03 02:53:53,876 : INFO : loading syn1neg from ./wiki.model.trainables.syn1neg.npy with mmap=None
+2020-08-03 02:53:54,033 : INFO : setting ignored attribute cum_table to None
+2020-08-03 02:53:54,033 : INFO : loaded ./wiki.model
+2020-08-03 02:53:54,737 : INFO : collecting all words and their counts
+2020-08-03 02:53:54,737 : INFO : PROGRESS: at sentence #0, processed 0 words, keeping 0 word types
+2020-08-03 02:53:54,737 : INFO : collected 40 word types from a corpus of 51 raw words and 1 sentences
+2020-08-03 02:53:54,737 : INFO : Updating model with new vocabulary
+2020-08-03 02:53:54,737 : INFO : New added 0 unique words (0% of original 40) and increased the count of 0 pre-existing words (0% of original 40)
+2020-08-03 02:53:54,738 : INFO : deleting the raw counts dictionary of 40 items
+2020-08-03 02:53:54,738 : INFO : sample=0.001 downsamples 0 most-common words
+2020-08-03 02:53:54,738 : INFO : downsampling leaves estimated 0 word corpus (0.0% of prior 0)
+2020-08-03 02:53:55,468 : INFO : estimated required memory for 457927 words and 200 dimensions: 961646700 bytes
+2020-08-03 02:53:55,468 : INFO : updating layer weights
+add.py:39: DeprecationWarning: Call to deprecated `iter` (Attribute will be removed in 4.0.0, use self.epochs instead).
+  W2v.MODEL.train(sentences, total_examples=W2v.MODEL.corpus_count, epochs=W2v.MODEL.iter)
+2020-08-03 02:53:55,710 : WARNING : Effective 'alpha' higher than previous training cycles
+2020-08-03 02:53:55,710 : INFO : training model with 3 workers on 457927 vocabulary and 200 features, using sg=0 hs=0 sample=0.001 negative=5 window=15
+2020-08-03 02:53:55,712 : INFO : worker thread finished; awaiting finish of 2 more threads
+2020-08-03 02:53:55,712 : INFO : worker thread finished; awaiting finish of 1 more threads
+2020-08-03 02:53:55,712 : INFO : worker thread finished; awaiting finish of 0 more threads
+2020-08-03 02:53:55,712 : INFO : EPOCH - 1 : training on 51 raw words (17 effective words) took 0.0s, 21761 effective words/s
+2020-08-03 02:53:55,713 : INFO : worker thread finished; awaiting finish of 2 more threads
+2020-08-03 02:53:55,713 : INFO : worker thread finished; awaiting finish of 1 more threads
+2020-08-03 02:53:55,713 : INFO : worker thread finished; awaiting finish of 0 more threads
+2020-08-03 02:53:55,713 : INFO : EPOCH - 2 : training on 51 raw words (17 effective words) took 0.0s, 32093 effective words/s
+2020-08-03 02:53:55,714 : INFO : worker thread finished; awaiting finish of 2 more threads
+2020-08-03 02:53:55,714 : INFO : worker thread finished; awaiting finish of 1 more threads
+2020-08-03 02:53:55,714 : INFO : worker thread finished; awaiting finish of 0 more threads
+2020-08-03 02:53:55,714 : INFO : EPOCH - 3 : training on 51 raw words (17 effective words) took 0.0s, 48557 effective words/s
+2020-08-03 02:53:55,714 : INFO : worker thread finished; awaiting finish of 2 more threads
+2020-08-03 02:53:55,715 : INFO : worker thread finished; awaiting finish of 1 more threads
+2020-08-03 02:53:55,715 : INFO : worker thread finished; awaiting finish of 0 more threads
+2020-08-03 02:53:55,715 : INFO : EPOCH - 4 : training on 51 raw words (17 effective words) took 0.0s, 50985 effective words/s
+2020-08-03 02:53:55,715 : INFO : worker thread finished; awaiting finish of 2 more threads
+2020-08-03 02:53:55,715 : INFO : worker thread finished; awaiting finish of 1 more threads
+2020-08-03 02:53:55,715 : INFO : worker thread finished; awaiting finish of 0 more threads
+2020-08-03 02:53:55,715 : INFO : EPOCH - 5 : training on 51 raw words (17 effective words) took 0.0s, 49224 effective words/s
+2020-08-03 02:53:55,715 : INFO : training on a 255 raw words (85 effective words) took 0.0s, 17465 effective words/s
+2020-08-03 02:53:55,715 : WARNING : under 10 jobs per worker: consider setting a smaller `batch_words' for smoother alpha decay
+2020-08-03 02:53:55,715 : INFO : saving Word2Vec object under wiki.model, separately None
+2020-08-03 02:53:55,716 : INFO : storing np array 'vectors' to wiki.model.wv.vectors.npy
+2020-08-03 02:53:56,090 : INFO : not storing attribute vectors_norm
+2020-08-03 02:53:56,090 : INFO : storing np array 'syn1neg' to wiki.model.trainables.syn1neg.npy
+2020-08-03 02:53:56,495 : INFO : not storing attribute cum_table
+2020-08-03 02:53:57,130 : INFO : saved wiki.model
+面白=
+[ 2.5609791e+00  4.2577686e+00  1.2205625e+00 -4.1692624e+00
+ -2.6872244e+00 -4.5265460e+00  7.5839157e+00 -1.8009729e+00
+  6.6743517e-01  8.0682242e-01 -2.3971682e+00 -3.6662128e+00
+  8.2489568e-01 -2.1008303e+00 -3.5958788e+00 -1.5898211e+00
+ -2.2868981e+00 -2.0339203e+00  1.3874562e+00  1.3976610e-01
+  5.5837679e+00 -3.2683527e+00 -3.4383947e-01  1.3340082e+00
+  2.3861523e+00 -6.1705203e+00  6.6730957e+00  1.2863050e+00
+ -1.8481717e+00  1.1571462e+00  1.0063528e+00  2.5568058e+00
+ -3.7369792e+00 -1.9427462e+00 -1.8917971e+00  4.9422762e-01
+ -5.6810934e-02 -2.1678720e+00 -4.2792025e+00 -2.5808609e+00
+  2.1455431e+00  6.8055516e-01 -1.3807486e+00  3.2802882e+00
+  4.7532424e-01 -1.0230256e+00  4.3789907e+00 -5.2424579e+00
+ -1.5145773e+00 -9.1242760e-01 -2.3508894e+00 -3.7326536e+00
+ -1.0083742e+00 -1.3503072e+00  6.9220290e-02  2.5885487e+00
+  2.1579576e+00  3.4854040e+00 -8.4327006e-01  2.5079610e+00
+  2.3725975e+00 -1.1068145e+00  1.3832291e+00 -4.4415560e+00
+  4.5663986e+00 -2.6958175e+00  2.0628607e+00  3.3276119e+00
+  3.4089189e+00  4.4810362e+00 -4.0420990e+00 -3.6588624e-01
+  2.4253106e+00  6.1411703e-01 -2.7868426e+00 -8.8658504e-02
+ -3.4095879e+00 -6.6782606e-01  3.0456312e+00 -1.6966251e+00
+  1.3426951e+00  3.8703499e+00  9.5611370e-01 -1.5233022e+00
+ -5.9627628e+00 -4.7066183e+00 -1.0535513e+00  7.7928066e-01
+ -8.4951001e-01 -5.4831996e+00 -3.3401279e+00  4.8657861e+00
+  5.1137500e+00  2.6808395e+00 -3.0822356e+00 -8.6479306e-02
+  1.8840237e-01 -1.6662983e+00 -1.4613179e+00  1.5752953e+00
+ -1.2897897e+00 -1.6888946e+00  4.2741313e+00  3.7193835e+00
+  1.5194138e+00 -6.8398058e-01  1.4011708e+00  1.5623441e+00
+ -4.1914053e+00 -6.4876670e-01  1.4679940e+00 -9.7386956e-01
+ -1.7476145e+00  1.4625430e-01 -2.9312265e-01  5.3198463e-01
+ -2.6614769e+00 -6.9628148e+00 -3.7941444e-01  1.1782960e+00
+  4.2778673e+00 -3.3261280e+00  3.1664906e+00 -3.9694450e+00
+ -9.6837318e-01  3.7084949e+00 -2.5927899e+00  7.4259667e-03
+ -1.1463259e+00  5.2612317e-01  9.2043799e-01 -1.4607257e+00
+  2.4248188e+00  4.9194747e-01  5.7503098e-01  4.8084373e+00
+  9.9717194e-01 -3.7637970e+00 -3.1785181e+00  2.3605547e+00
+  5.2323031e-01  4.5826735e+00 -1.5730377e-01 -2.6606667e+00
+  3.9191644e+00  2.3312764e+00 -9.7685176e-01  1.2971727e+00
+  1.3163122e+00  8.5116917e-01 -3.4786385e-01  3.5422769e+00
+ -9.4607264e-01  1.0559640e+00 -4.2896214e+00 -1.6620630e-01
+ -7.0511355e+00  3.0536401e+00  3.1874697e+00 -4.4893050e+00
+ -6.6096258e+00 -3.3301306e+00 -5.9575334e+00  1.3322947e+00
+ -4.3089323e+00 -6.5250254e-01  3.7911861e+00 -3.5401729e-01
+  6.6092420e-01  3.3650496e+00  2.9805014e+00 -8.5132658e-01
+  2.5368416e+00  1.6374184e-01 -1.2499672e+00  5.0429339e+00
+ -2.8045111e+00  2.4476845e+00  1.8584839e-01 -8.3448339e-01
+  3.5191733e-01 -1.8247732e+00  4.7799702e+00  9.0464735e-01
+ -1.0442443e+00  1.3497437e+00  2.3492389e+00 -1.4654698e+00
+ -4.5823698e+00 -2.4039361e+00 -2.4640377e+00 -3.5530245e-01
+ -2.1702285e+00  2.7579756e+00 -9.1565907e-01 -3.6150188e+00
+ -2.7284307e+00  2.6190920e+00  3.3423250e+00  2.5157707e+00]
+457927
+[1m[7m%[27m[1m[0m                                                                                ]7;file://Mac-mini.local/Users/ryota/Desktop/project[0m[27m[24m[Jryota@Mac-mini project % [K[?2004heexit[?2004l
+
+Script done on Mon Aug  3 02:54:02 2020
