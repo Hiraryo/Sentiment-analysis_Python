@@ -203,8 +203,3 @@ If you find this code useful, please refer it in publications as:
   howpublished = {\url{https://github.com/attardi/wikiextractor}}
 }
 ~~~
-# Sentiment-analysis_Python
-# Sentiment-analysis_Python
-# Sentiment-analysis_Python
-# Sentiment-analysis_Python
-# Sentiment-analysis_Python
